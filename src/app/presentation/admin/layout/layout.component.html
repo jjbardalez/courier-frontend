@@ -1,0 +1,32 @@
+<p-sidebar class="layout-sidebar" [(visible)]="display">
+
+    <div>
+        <ul class="layout-menu">
+            <li *ngFor="let menu of items" class="layout-root-menuitem" [routerLink]="menu.url">
+                <a>
+                    <span class="layout-menuitem-root-text">{{menu.label}}</span>
+                    <i class="pi pi-fw pi-angle-down layout-submenu-toggler"></i>
+                    <span class="p-ink"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</p-sidebar>
+
+<div class="md:px-6 py-3">
+    <div class="grid">
+        <button pButton pRipple icon="pi pi-bars" class="p-button-rounded p-button-text" (click)="display = true">
+        </button>
+        <p-breadcrumb [model]="breadcrumbItems"></p-breadcrumb>
+        <!--CABECERA-->
+        <nav class="grid">
+            <p-tabMenu [model]="menu" class="col"></p-tabMenu>
+            <span class="p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input type="text" pInputText placeholder="SEARCH" class="border-none md:h-full" />
+            </span>
+        </nav>
+    </div>
+    <router-outlet></router-outlet>
+</div>

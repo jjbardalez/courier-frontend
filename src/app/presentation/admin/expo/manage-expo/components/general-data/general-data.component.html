@@ -1,0 +1,84 @@
+<p-card>
+    <div class="text-center col-12">
+        <span class="font-light text-primary text-center">DATOS GENERALES</span>
+    </div>
+    <form [formGroup]="generalDataForm">
+        <div class="p-fluid grid col-12 md:col-12 card-content md:m-0 md:p-0 flex align-items-center">
+            <!--SUCURSAL-->
+            <div class="col-12 md:col-4 flex">
+                <span class="col-2 text-700">Sucursal</span>
+                <input 
+                formControlName="branch_office"
+                class="col" 
+                type="text" 
+                pInputText 
+                placeholder="Codigo + Descripcion" 
+                autofocus
+                >
+            </div>
+
+            <!--PRODUCTO-->
+            <div class="col-12 md:col-3 flex">
+                <span class="col text-700">Producto</span>
+                <p-dropdown class="col" [options]="productList" placeholder="Selecciona un producto" optionLabel="name"
+                    [showClear]="true"></p-dropdown>
+            </div>
+
+            <!--GUÍA NRO-->
+            <div class="col-12 md:col-2 flex">
+                <span class="col text-700">Guía Nro</span>
+                <input class="col" type="text" pInputText placeholder="Codigo">
+            </div>
+
+            <!--ESTACIÓN-->
+            <div class="col-12 md:col-3 flex">
+                <span class="col text-700">Estación</span>
+                <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+            </div>
+
+            <!--F. REGISTRO-->
+            <div class="col-12 md:col flex">
+                <span class="col-6 text-700 md:pr-2">F. Registro</span>
+                <span class="col text-500">{{ today | date: 'dd/MM/yyyy'}}</span>
+            </div>
+
+            <!--F. GUÍA-->
+            <div class="col-12 md:col-2 flex">
+                <span class="col-3 text-700">F. Guía</span>
+                <p-calendar placeholder="DD/MM/AAAA" dateFormat="dd/mm/yy" appendTo="body"></p-calendar>
+            </div>
+
+            <!--ORIGEN-->
+            <div class="col-12 md:col-1 flex">
+                <span class="col text-700">Origen</span>
+                <span class="col text-500">PE/LIM</span>
+            </div>
+
+            <!--DESTINO-->
+            <div class="col-12 md:col flex relative position-input">
+                <span class="col text-700">Destino</span>
+                <input class="col" type="text" pInputText placeholder="Codigo">
+                <p-radioButton class="pl-1" name="groupname" value="val1"></p-radioButton>
+            </div>
+
+            <!--MANIFIESTO-->
+            <div class="col-12 md:col-2 flex">
+                <span class="col text-700 relative position-manifiesto">Manifiesto</span>
+                <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
+            </div>
+
+            <!--RUTA-->
+            <div class="col-12 md:col flex">
+                <span class="col text-700">Ruta</span>
+                <input  class="col" type="text" pInputText placeholder="Codigo">
+            </div>
+
+            <!--F. RUTA-->
+            <div class="col-12 md:col flex">
+                <span class="col text-700">F. Ruta</span>
+                <p-calendar placeholder="DD/MM/AAAA" appendTo="body" dateFormat="dd/mm/yy"></p-calendar>
+            </div>
+        </div>
+    </form>
+
+</p-card>
