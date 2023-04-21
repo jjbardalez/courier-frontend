@@ -1,9 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ManageExpoComponent } from './manage-expo/manage-expo.component';
+import { CourierGuideComponent } from './manage-expo/courier-guide/courier-guide.component';
+import { ManifestComponent } from './manage-expo/manifest/manifest.component';
+import { BillingComponent } from './manage-expo/billing/billing.component';
+import { CreditsComponent } from './manage-expo/credits/credits.component';
 
 const routes: Routes = [
-  { path: '', component: ManageExpoComponent },
+  {
+    path: '',
+    redirectTo: 'guide-courier'
+  },
+  { path: 'guide-courier', component: CourierGuideComponent },
+  { path: 'manifest', component: ManifestComponent },
+  { path: 'billing', component: BillingComponent },
+  { path: 'credits', component: CreditsComponent },
+
 ];
 
 @NgModule({

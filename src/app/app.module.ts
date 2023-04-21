@@ -14,10 +14,9 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoaderInterceptorService } from './common/helpers/interceptors/loader.interceptor';
 import { ErrorInterceptorService } from './common/helpers/interceptors/error.interceptor';
 
-
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
 
   imports: [

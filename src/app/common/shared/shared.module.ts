@@ -22,6 +22,7 @@ const COMPONENTS = [
         PrimeNGModule
     ],
     exports: [
+        ReactiveFormsModule,
         PrimeNGModule,
         COMPONENTS
     ]

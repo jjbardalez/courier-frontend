@@ -34,6 +34,7 @@ import { SlideMenuModule } from 'primeng/slidemenu';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { MenuModule } from 'primeng/menu';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 const COMPONENTS = [
     AnimateModule,
@@ -70,7 +71,8 @@ const COMPONENTS = [
     SlideMenuModule,
     SelectButtonModule,
     SplitButtonModule,
-    MenuModule
+    MenuModule,
+    PanelMenuModule
 ];
 
 @NgModule({
