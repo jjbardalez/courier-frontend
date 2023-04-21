@@ -5,12 +5,14 @@ import { ManifestComponent } from './manage-expo/manifest/manifest.component';
 import { BillingComponent } from './manage-expo/billing/billing.component';
 import { CreditsComponent } from './manage-expo/credits/credits.component';
 
+const routeGuideCourier = 'guide-courier'
+
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'guide-courier'
+    redirectTo: routeGuideCourier
   },
-  { path: 'guide-courier', component: CourierGuideComponent },
+  { path: routeGuideCourier, component: CourierGuideComponent },
   { path: 'manifest', component: ManifestComponent },
   { path: 'billing', component: BillingComponent },
   { path: 'credits', component: CreditsComponent },
