@@ -2,4 +2,79 @@
     <div class="text-center col-12">
         <span class="font-light text-primary text-center">DATOS DESTINATARIO</span>
     </div>
+
+    <form>
+        <div class="p-fluid grid col-12 md:col-12 card-content">
+            <!--CODIGO-->
+            <div class="col-12 md:col-12 flex">
+                <span class="col-2 text-700">Código</span>
+                <input class="col mr-4 md:mr-8" type="text" pInputText placeholder="Codigo + Descripcion">
+                <button class="col-3 b-primary text-white cursor-pointer" type="text">Crear nuevo Destinatario</button>
+            </div>
+
+            <!--SUCURSAL-->
+            <div class="col-12 md:col-12 flex">
+                <span class="col-2 text-700">Sucursal</span>
+                <input class="col mr-4 md:mr-8" type="text" pInputText placeholder="Codigo + Descripcion">
+                <button class="col-3 b-transparent-pink text-white cursor-pointer" type="text">Actualizar datos destinatario</button>
+            </div>
+
+            <!--CONTACTO-->
+            <div class="col-12 md:col-12 flex align-items-center justify-content-center">
+                <div class="col-6 flex">
+                    <span class="col-4 text-700">Contacto</span>
+                    <input class="col" type="text" pInputText placeholder="Nombre">
+                </div>
+
+                <div class="col-6 flex">
+                    <span class="col-4 text-700">Telefono</span>
+                    <input class="col" type="text" pInputText placeholder="Telefono">
+                </div>
+            </div>
+            <!--DOCUMENTOS-->
+            <div class="col-12 md:col-12 flex align-items-center justify-content-center">
+                    <span class="col text-700">Tipo Doc</span>
+                    <p-dropdown class="col type-document" placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
+
+                    <span class="col text-700">Nro Doc</span>
+                    <input class="col number-document" type="text" pInputText placeholder="#Documento">
+
+                    <span class="col text-700">Cuenta Fedex</span>
+                    <input class="col account-fedex" type="text" pInputText placeholder="Codigo">
+            </div>
+
+            <!--COMPAÑIA-->
+            <div class="col-12 md:col-12 flex">
+                <span class="col-2 text-700">N. Comercial</span>
+                <input class="col" type="text" pInputText placeholder="Nombre">
+            </div>
+
+            <!--DIRECCIÓN-->
+            <div class="col-12 md:col-12 flex">
+                <span class="col-2 text-700">Dirección</span>
+                <input class="col" type="text" pInputText placeholder="Calle + Nro + Urbanización + Distrito">
+            </div>
+
+            <!--Referecia - Codigo postal -->
+            <div class="col-12 md:col-12 flex">
+                <span class="col-2 text-700">Referencia</span>
+                <input class="col" type="text" pInputText placeholder="Referencia">
+
+                <span class="col-2 text-700">Cod. Post</span>
+                <p-dropdown optionLabel="name" [showClear]="true" placeholder="Codigo"></p-dropdown>
+            </div>
+
+            <!--Cuidad- País- Estado -->
+            <div class="col-12 md:col-12 flex align-items-center justify-content-center">
+                <span class="col-2 text-700">Ciudad</span>
+                <input class="col" type="text" pInputText placeholder="Cuidad">
+
+                <span class="col-2 text-700">Pais</span>
+                <input class="col" type="text" pInputText placeholder="Codigo + País">
+
+                <span class="col-2 text-700">Estado</span>
+                <p-dropdown class="col pt-0" placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
+            </div>
+        </div>
+    </form>
 </p-card>
