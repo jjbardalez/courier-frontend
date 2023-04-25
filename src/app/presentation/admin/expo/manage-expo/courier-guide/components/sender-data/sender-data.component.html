@@ -4,16 +4,16 @@
     </div>
 
     <form>
-        <div class="p-fluid grid col-12 md:col-12 card-content">
+        <div class="p-fluid grid col-12 md:col-12 card-content pt-0 pb-2">
             <!--CODIGO-->
-            <div class="col-12 md:col-12 flex">
+            <div class="col-12 md:col-12 flex p-1">
                 <span class="col-2 text-700">Código</span>
                 <input class="col mr-4 md:mr-8" type="text" pInputText placeholder="Codigo + Descripcion">
                 <button class="col-3 b-primary text-white cursor-pointer" type="text">Crear nuevo cliente</button>
             </div>
 
             <!--SUCURSAL-->
-            <div class="col-12 md:col-12 flex">
+            <div class="col-12 md:col-12 flex p-1">
                 <span class="col-2 text-700">Sucursal</span>
                 <input class="col mr-4 md:mr-8" type="text" pInputText placeholder="Codigo + Descripcion">
                 <button class="col-3 b-transparent-pink text-white cursor-pointer" type="text">Actualizar datos
@@ -21,21 +21,21 @@
             </div>
 
             <!--CONTACTO-->
-            <div class="col-12 md:col-12 flex">
-                <div class="col-6 flex">
+            <div class="col-12 md:col-12 flex p-1">
+                <div class="col-6 flex py-0 px-0">
                     <span class="col-4 text-700">Contacto</span>
                     <input class="col" type="text" pInputText placeholder="Nombre">
                 </div>
 
-                <div class="col-6 flex">
+                <div class="col-6 flex py-0 px-0">
                     <span class="col-4 text-700">Telefono</span>
                     <input class="col" type="text" pInputText placeholder="Telefono">
                 </div>
             </div>
             <!--DOCUMENTOS-->
-            <div class="col-12 md:col-12 flex align-items-center justify-content-center">
+            <div class="col-12 md:col-12 flex align-items-center justify-content-center p-1">
                 <span class="col text-700">Tipo Doc</span>
-                <p-dropdown class="col type-document" placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
+                <p-dropdown class="col type-document flex align-items-center justify-content-center px-1" placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
 
                 <span class="col text-700">Nro Doc</span>
                 <input class="col number-document" type="text" pInputText placeholder="#Documento">
@@ -44,20 +44,20 @@
                 <input class="col account-fedex" type="text" pInputText placeholder="Codigo">
             </div>
 
-            <!--COMPAÑIA-->
-            <div class="col-12 md:col-12 flex">
+            <!--N. COMERCIAL-->
+            <div class="col-12 md:col-12 flex p-1">
                 <span class="col-2 text-700">N. Comercial</span>
                 <input class="col" type="text" pInputText placeholder="Nombre">
             </div>
 
             <!--DIRECCIÓN-->
-            <div class="col-12 md:col-12 flex">
+            <div class="col-12 md:col-12 flex p-1">
                 <span class="col-2 text-700">Dirección</span>
                 <input class="col" type="text" pInputText placeholder="Calle + Nro + Urbanización + Distrito">
             </div>
 
             <!--Referecia - Codigo postal -->
-            <div class="col-12 md:col-12 flex">
+            <div class="col-12 md:col-12 flex p-1">
                 <span class="col-2 text-700">Referencia</span>
                 <input class="col" type="text" pInputText placeholder="Referencia">
 
@@ -66,7 +66,7 @@
             </div>
 
             <!--Cuidad- País- Estado -->
-            <div class="col-12 md:col-12 flex align-items-center justify-content-center">
+            <div class="col-12 md:col-12 flex align-items-center justify-content-center p-1 px-1">
                 <span class="col-2 text-700">Ciudad</span>
                 <input class="col" type="text" pInputText placeholder="Cuidad">
 
@@ -74,7 +74,7 @@
                 <input class="col" type="text" pInputText placeholder="Codigo + País">
 
                 <span class="col-2 text-700">Estado</span>
-                <p-dropdown class="col pt-0" placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
+                <p-dropdown class="col pt-0 px-0" placeholder="" optionLabel="name" [showClear]="true"></p-dropdown>
             </div>
         </div>
     </form>

@@ -1,16 +1,26 @@
-<div class="grid justify-content-center">
+<div class="grid justify-content-center row-gap-2">
     <!--DATOS GENERALES-->
-    <div class="col-12 md:col-12 md:mt-3">
+    <div class="col-12 md:col-12 p-0">
         <app-general-data></app-general-data>
     </div>
 
     <!--DATOS REMITENTE-->
-    <div class="col-12 md:col-6 md:mt-2">
+    <div class="col-12 md:col-6 p-0 pr-1">
         <app-sender-data></app-sender-data>
     </div>
 
     <!--DATOS DESTINATARIO-->
-    <div class="col-12 md:col-6 md:mt-2">
+    <div class="col-12 md:col-6 p-0 pl-1">
         <app-recipient-data></app-recipient-data>
+    </div>
+
+    <!--DATOS PAQUETE-->
+    <div class="col-12 md:col-6 p-0 pr-1">
+        <app-packet-data></app-packet-data>
+    </div>
+
+    <!--DATOS PAGO-->
+    <div class="col-12 md:col-6 p-0 pl-1">
+        <app-payment-data></app-payment-data>
     </div>
 </div>

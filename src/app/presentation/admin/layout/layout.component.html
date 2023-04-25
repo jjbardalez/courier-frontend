@@ -8,18 +8,5 @@
 </p-sidebar>
 
 <div class="md:px-6 py-3">
-    <div class="grid">
-        <button pButton pRipple icon="pi pi-bars" class="p-button-rounded p-button-text" (click)="display = true">
-        </button>
-        <p-breadcrumb [model]="breadcrumbItems"></p-breadcrumb>
-        <!--MENU TAB-->
-        <nav class="grid">
-            <p-tabMenu [model]="tabMenu" class="col" [activeItem]="tabMenu[itemMenuIndex]"></p-tabMenu>
-            <span class="p-input-icon-left">
-                <i class="pi pi-search"></i>
-                <input type="text" pInputText placeholder="SEARCH" class="border-none md:h-full" />
-            </span>
-        </nav>
-    </div>
     <router-outlet></router-outlet>
 </div>

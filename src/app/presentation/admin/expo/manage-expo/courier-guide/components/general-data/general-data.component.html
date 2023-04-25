@@ -3,9 +3,9 @@
         <span class="font-light text-primary text-center">DATOS GENERALES</span>
     </div>
     <form [formGroup]="generalDataForm">
-        <div class="p-fluid grid col-12 md:col-12 card-content flex" >
+        <div class="p-fluid grid col-12 md:col-12 card-content flex pt-0 pb-2" >
             <!--SUCURSAL-->
-            <div class="col-12 md:col-4 flex align-items-center justify-content-center">
+            <div class="col-12 md:col-4 flex align-items-center justify-content-center mb-1">
                 <span class="col-2 text-700">Sucursal</span>
                 <input 
                 formControlName="branch_office"
@@ -18,10 +18,10 @@
             </div>
 
             <!--PRODUCTO-->
-            <div class="col-12 md:col-3 flex align-items-center justify-content-center">
+            <div class="col-12 md:col-3 flex align-items-center justify-content-center pt-0 mb-1">
                 <span class="col-2 md:col text-700">Producto</span>
                 <p-dropdown 
-                class="col" 
+                class="col flex align-items-center px-0" 
                 [options]="productList" 
                 placeholder="Selecciona un producto" 
                 optionLabel="name"
@@ -31,7 +31,7 @@
             </div>
 
             <!--GUÍA NRO-->
-            <div class="col-12 md:col-2 flex align-items-center justify-content-center">
+            <div class="col-12 md:col-2 flex align-items-center justify-content-center pt-0 mb-1">
                 <span class="col-2 md:col-4 text-700">Guía Nro</span>
                 <input 
                 class="col md:col" 
@@ -42,7 +42,7 @@
             </div>
 
             <!--ESTACIÓN-->
-            <div class="col-12 md:col-3 flex align-items-center justify-content-center">
+            <div class="col-12 md:col-3 flex align-items-center justify-content-center mb-1">
                 <span class="col-2 md:col-4 text-700">Estación</span>
                 <input 
                 class="col" 
@@ -53,13 +53,13 @@
             </div>
 
             <!--F. REGISTRO-->
-            <div class="col-12 md:col-2 flex align-items-center justify-content-center md:-mt-4">
+            <div class="col-12 md:col-2 flex align-items-center justify-content-center md:-mt-3">
                 <span class="col-6 text-700">F. Registro</span>
                 <span class="col text-500">{{ today | date: 'dd/MM/yyyy'}}</span>
             </div>
 
             <!--F. GUÍA-->
-            <div class="col-8 md:col-2 flex align-items-center justify-content-center md:-mt-4">
+            <div class="col-8 md:col-2 flex align-items-center md:-mt-3">
                 <span class="col-3 md:col-3 text-700">F. Guía</span>
                 <p-calendar 
                 placeholder="DD/MM/AAAA" 
@@ -70,13 +70,13 @@
             </div>
 
             <!--ORIGEN-->
-            <div class="col-4 md:col-1 flex align-items-center justify-content-center md:-mt-4">
+            <div class="col-4 md:col-1 flex align-items-center justify-content-center md:-mt-3 pt-s0">
                 <span class="col text-700">Origen</span>
                 <span class="col text-500">PE/LIM</span>
             </div>
 
             <!--DESTINO-->
-            <div class="col-12 md:col-2 flex align-items-center justify-content-center md:-mt-4">
+            <div class="col-12 md:col-2 flex align-items-center justify-content-center md:-mt-3 pt-0">
                 <span class="col-2 md:col text-700">Destino</span>
                 <input class="col" type="text" pInputText placeholder="Codigo">
                 <p-radioButton 
@@ -88,22 +88,22 @@
             </div>
 
             <!--MANIFIESTO-->
-            <div class="col-12 md:col-2 flex align-items-center justify-content-center md:-mt-4">
+            <div class="col-12 md:col-2 flex align-items-center justify-content-center md:-mt-3 pt-0">
                 <span class="col-2 md:col-4 text-700 relative position-manifiesto">Manifiesto</span>
                 <input class="col" type="text" pInputText placeholder="Codigo + Descripcion">
             </div>
 
             <!--RUTA-->
-            <div class="col-6 md:col-1 flex align-items-center justify-content-center md:-mt-4">
+            <div class="col-6 md:col-1 flex align-items-center justify-content-center md:-mt-3 pt-0">
                 <span class="col-4 md:col-5 text-700">Ruta</span>
                 <input class="col" type="text" pInputText placeholder="Codigo">
             </div>
 
             <!--F. RUTA-->
-            <div class="col-6 md:col-2 flex align-items-center justify-content-center md:-mt-4">
+            <div class="col-6 md:col-2 flex align-items-center justify-content-center md:-mt-2 pt-0">
                 <span class="col-2 md:col-5 text-700">F. Ruta</span>
                 <p-calendar 
-                class="col" 
+                class="col flex align-items-center justify-content-center" 
                 placeholder="DD/MM/AAAA" 
                 appendTo="body" 
                 dateFormat="dd/mm/yy"
